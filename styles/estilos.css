@@ -1,0 +1,113 @@
+/* INICIO Contenido general*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --color-nav: #016A70;
+    --color-letra: #A2C579;
+    --color-letra-hover: #FFFFDD;
+    --color-fondo: #D2DE32;
+
+}
+
+/* FIN Contenido general*/
+
+/* INICIO index.html*/
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+
+}
+
+.header-index {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.header-index_figure_img {
+    height: 20vh;
+}
+
+.header-index_title {
+    color: var(--color-letra);
+    font-size: 15vh;
+}
+
+.main-index {
+    width: 100vw;
+    background-color: var(--color-nav);
+}
+
+.main-index-nav {
+    width: 100vw;
+    height: 10vh;
+    color: var(--color-letra);
+}
+
+.main-index_ul {
+    width: 100vw;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-index_ul_li {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+
+}
+
+.main-index_ul_li:hover {
+    background-color: var(--color-letra-hover);
+    border-radius: 10px;
+    height: 70%;
+    width: 18%;
+}
+
+.carga-banderas {
+    width: 100vw;
+    height: 90vh;
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    background-color: var(--color-fondo);
+}
+
+
+.artBandera{
+    width: 12vw;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    flex-flow: column; 
+}
+
+.flag{
+    width: 10vw;
+} 
+
+/* FIN index.html*/
+
+
+/* RESPONSIVE */
