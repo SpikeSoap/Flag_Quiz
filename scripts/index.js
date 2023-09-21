@@ -23,11 +23,8 @@ let paises = [{ id: 1, bandera: "../images/bandera1.gif", nombre: "Estonia", cap
 const cargaBanderas = document.getElementsByClassName("carga-banderas")[0];
 
 
-document.addEventListener('DOMContentLoaded', () => {
-
-
-
-    // Listado de banderas
+// Cargar el listado de banderas
+function cargarBanderas(){
     for (let i = 0; i < paises.length; i++) {
         let artBandera = document.createElement('article');
         artBandera.className = "artBandera";
@@ -46,9 +43,30 @@ document.addEventListener('DOMContentLoaded', () => {
         capital.innerText = paises[i].capital;
         artBandera.appendChild(capital);
     }
+};
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  
+    cargarBanderas();
 
 });
 
+const logo = document.querySelector(".header-index_figure_img");
+
+function borrarBanderas(){
+
+    cargaBanderas.innerHTML = "";
+
+}
+
+//Cargar todas las banderas cuando click en la imágen del logo
+logo.addEventListener("click", ()=>{
+
+    borrarBanderas();
+
+    cargarBanderas();
+});
 
 // Europa
 const europaBtn = document.querySelector(".europa-btn");
