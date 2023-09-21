@@ -15,6 +15,11 @@
 
 }
 
+@font-face {
+    font-family: 'Kaushan';
+    src: url(/tipografias/KaushanScript-Regular.ttf);
+}
+
 /* FIN Contenido general*/
 
 /* INICIO index.html*/
@@ -28,7 +33,7 @@
 
 .header-index {
     width: 100vw;
-    height: 20vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,6 +46,7 @@
 
 .header-index_title {
     color: var(--color-letra);
+    font-family: 'Kaushan';
     font-size: 15vh;
 }
 
@@ -51,7 +57,7 @@
 
 .main-index-nav {
     width: 100vw;
-    height: 10vh;
+    height: 13vh;
     color: var(--color-letra);
 }
 
@@ -80,13 +86,13 @@
     background-color: var(--color-letra-hover);
     border-radius: 10px;
     height: 70%;
-    width: 18%;
+    width: 16%;
 }
 
 .carga-banderas {
     width: 100vw;
     height: 90vh;
-    padding-top: 2%;
+    padding-top: 3%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
