@@ -71,12 +71,8 @@ logo.addEventListener("click", ()=>{
 // Europa
 const europaBtn = document.querySelector(".europa-btn");
 
-europaBtn.addEventListener("click", () => {
-
-    // Borramos las banderas que previamente están cargadas 
-    cargaBanderas.innerHTML = "";
-
-    let flagMatch = paises.filter(({ continente }) => continente === "Europa");
+//Se cargan solo las banderas que corresponden
+function matchBanderas(flagMatch){
 
     for (let i = 0; i < flagMatch.length; i++) {
         let artBandera = document.createElement('article');
@@ -96,6 +92,17 @@ europaBtn.addEventListener("click", () => {
         capital.innerText = flagMatch[i].capital;
         artBandera.appendChild(capital);
     }
+}
+
+//Europa
+europaBtn.addEventListener("click", () => {
+
+    borrarBanderas();
+
+    let flagMatch = paises.filter(({ continente }) => continente === "Europa");
+
+    matchBanderas(flagMatch);
+   
 });
 
 // África
@@ -103,29 +110,11 @@ const africaBtn = document.querySelector(".africa-btn");
 
 africaBtn.addEventListener("click", () => {
 
-    // Borramos las banderas que previamente están cargadas 
-    cargaBanderas.innerHTML = "";
+    borrarBanderas();
 
     let flagMatch = paises.filter(({ continente }) => continente === "Africa");
 
-    for (let i = 0; i < flagMatch.length; i++) {
-        let artBandera = document.createElement('article');
-        artBandera.className = "artBandera";
-        cargaBanderas.append(artBandera);
-
-        let titleBandera = document.createElement('h3');
-        titleBandera.innerText = flagMatch[i].nombre;
-        artBandera.appendChild(titleBandera);
-
-        let flag = document.createElement('img');
-        flag.src = flagMatch[i].bandera;
-        flag.className = "flag";
-        artBandera.appendChild(flag);
-
-        let capital = document.createElement('p');
-        capital.innerText = flagMatch[i].capital;
-        artBandera.appendChild(capital);
-    }
+    matchBanderas(flagMatch);
 });
 
 
@@ -134,29 +123,11 @@ const asiaBtn = document.querySelector(".asia-btn");
 
 asiaBtn.addEventListener("click", () => {
 
-    // Borramos las banderas que previamente están cargadas 
-    cargaBanderas.innerHTML = "";
+    borrarBanderas();
 
     let flagMatch = paises.filter(({ continente }) => continente === "Asia");
 
-    for (let i = 0; i < flagMatch.length; i++) {
-        let artBandera = document.createElement('article');
-        artBandera.className = "artBandera";
-        cargaBanderas.append(artBandera);
-
-        let titleBandera = document.createElement('h3');
-        titleBandera.innerText = flagMatch[i].nombre;
-        artBandera.appendChild(titleBandera);
-
-        let flag = document.createElement('img');
-        flag.src = flagMatch[i].bandera;
-        flag.className = "flag";
-        artBandera.appendChild(flag);
-
-        let capital = document.createElement('p');
-        capital.innerText = flagMatch[i].capital;
-        artBandera.appendChild(capital);
-    }
+    matchBanderas(flagMatch);
 });
 
 
@@ -165,29 +136,11 @@ const americaBtn = document.querySelector(".america-btn");
 
 americaBtn.addEventListener("click", () => {
 
-    // Borramos las banderas que previamente están cargadas 
-    cargaBanderas.innerHTML = "";
+    borrarBanderas();
 
     let flagMatch = paises.filter(({ continente }) => continente === "America");
 
-    for (let i = 0; i < flagMatch.length; i++) {
-        let artBandera = document.createElement('article');
-        artBandera.className = "artBandera";
-        cargaBanderas.append(artBandera);
-
-        let titleBandera = document.createElement('h3');
-        titleBandera.innerText = flagMatch[i].nombre;
-        artBandera.appendChild(titleBandera);
-
-        let flag = document.createElement('img');
-        flag.src = flagMatch[i].bandera;
-        flag.className = "flag";
-        artBandera.appendChild(flag);
-
-        let capital = document.createElement('p');
-        capital.innerText = flagMatch[i].capital;
-        artBandera.appendChild(capital);
-    }
+    matchBanderas(flagMatch);
 });
 
 
@@ -196,27 +149,9 @@ const oceaniaBtn = document.querySelector(".oceania-btn");
 
 oceaniaBtn.addEventListener("click", () => {
 
-    // Borramos las banderas que previamente están cargadas 
-    cargaBanderas.innerHTML = "";
+    borrarBanderas();
 
     let flagMatch = paises.filter(({ continente }) => continente === "Oceania");
 
-    for (let i = 0; i < flagMatch.length; i++) {
-        let artBandera = document.createElement('article');
-        artBandera.className = "artBandera";
-        cargaBanderas.append(artBandera);
-
-        let titleBandera = document.createElement('h3');
-        titleBandera.innerText = flagMatch[i].nombre;
-        artBandera.appendChild(titleBandera);
-
-        let flag = document.createElement('img');
-        flag.src = flagMatch[i].bandera;
-        flag.className = "flag";
-        artBandera.appendChild(flag);
-
-        let capital = document.createElement('p');
-        capital.innerText = flagMatch[i].capital;
-        artBandera.appendChild(capital);
-    }
+    matchBanderas(flagMatch);
 });
