@@ -98,6 +98,7 @@ europaBtn.addEventListener("click", () => {
     let flagMatch = paises.filter(({ continente }) => continente === "Europa");
     matchBanderas(flagMatch);
    
+    europaBtn.classList.add('nav-seleccionado');
 });
 
 // Botón África del nav
@@ -105,6 +106,8 @@ africaBtn.addEventListener("click", () => {
     borrarBanderas();
     let flagMatch = paises.filter(({ continente }) => continente === "Africa");
     matchBanderas(flagMatch);
+
+    africaBtn.classList.add('nav-seleccionado');
 });
 
 
@@ -113,6 +116,8 @@ asiaBtn.addEventListener("click", () => {
     borrarBanderas();
     let flagMatch = paises.filter(({ continente }) => continente === "Asia");
     matchBanderas(flagMatch);
+
+    asiaBtn.classList.add('nav-seleccionado');
 });
 
 
@@ -121,6 +126,8 @@ americaBtn.addEventListener("click", () => {
     borrarBanderas();
     let flagMatch = paises.filter(({ continente }) => continente === "America");
     matchBanderas(flagMatch);
+
+    americaBtn.classList.add('nav-seleccionado');
 });
 
 
@@ -129,8 +136,8 @@ oceaniaBtn.addEventListener("click", () => {
     borrarBanderas();
     let flagMatch = paises.filter(({ continente }) => continente === "Oceania");
     matchBanderas(flagMatch);
+
+    oceaniaBtn.classList.add('nav-seleccionado');
 });
 
-
-// Parte en la que se carga una modal
 
