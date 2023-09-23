@@ -20,8 +20,15 @@ let paises = [{ id: 1, bandera: "../images/bandera1.gif", nombre: "Estonia", cap
 
 ];
 
-const cargaBanderas = document.getElementsByClassName("carga-banderas")[0];
+const cargaBanderas = document.querySelector(".carga-banderas");
+const logo = document.querySelector(".header-index_figure_img");
 
+// Botones del nav del menú
+const europaBtn = document.querySelector(".europa-btn");
+const africaBtn = document.querySelector(".africa-btn");
+const asiaBtn = document.querySelector(".asia-btn");
+const americaBtn = document.querySelector(".america-btn");
+const oceaniaBtn = document.querySelector(".oceania-btn");
 
 // Cargar el listado de banderas
 function cargarBanderas(){
@@ -45,31 +52,22 @@ function cargarBanderas(){
     }
 };
 
+function borrarBanderas(){
+    cargaBanderas.innerHTML = "";
+}
 
 document.addEventListener('DOMContentLoaded', () => {
-  
     cargarBanderas();
 
 });
 
-const logo = document.querySelector(".header-index_figure_img");
-
-function borrarBanderas(){
-
-    cargaBanderas.innerHTML = "";
-
-}
 
 //Cargar todas las banderas cuando click en la imágen del logo
 logo.addEventListener("click", ()=>{
 
     borrarBanderas();
-
     cargarBanderas();
 });
-
-// Europa
-const europaBtn = document.querySelector(".europa-btn");
 
 //Se cargan solo las banderas que corresponden
 function matchBanderas(flagMatch){
@@ -94,64 +92,45 @@ function matchBanderas(flagMatch){
     }
 }
 
-//Europa
+// Botón Europa del nav
 europaBtn.addEventListener("click", () => {
-
     borrarBanderas();
-
     let flagMatch = paises.filter(({ continente }) => continente === "Europa");
-
     matchBanderas(flagMatch);
    
 });
 
-// África
-const africaBtn = document.querySelector(".africa-btn");
-
+// Botón África del nav
 africaBtn.addEventListener("click", () => {
-
     borrarBanderas();
-
     let flagMatch = paises.filter(({ continente }) => continente === "Africa");
-
     matchBanderas(flagMatch);
 });
 
 
-// Asia
-const asiaBtn = document.querySelector(".asia-btn");
-
+// Botón Asia del nav
 asiaBtn.addEventListener("click", () => {
-
     borrarBanderas();
-
     let flagMatch = paises.filter(({ continente }) => continente === "Asia");
-
     matchBanderas(flagMatch);
 });
 
 
-// América
-const americaBtn = document.querySelector(".america-btn");
-
+// Botón América del nav
 americaBtn.addEventListener("click", () => {
-
     borrarBanderas();
-
     let flagMatch = paises.filter(({ continente }) => continente === "America");
-
     matchBanderas(flagMatch);
 });
 
 
-// Oceanía
-const oceaniaBtn = document.querySelector(".oceania-btn");
-
+// Botón Oceanía del nav
 oceaniaBtn.addEventListener("click", () => {
-
     borrarBanderas();
-
     let flagMatch = paises.filter(({ continente }) => continente === "Oceania");
-
     matchBanderas(flagMatch);
 });
+
+
+// Parte en la que se carga una modal
+
