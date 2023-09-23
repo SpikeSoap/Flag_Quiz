@@ -92,12 +92,22 @@ function matchBanderas(flagMatch){
     }
 }
 
+//Borramos el botón del nav seleccionado
+function borrarSelecionado() {
+    europaBtn.classList.remove('nav-seleccionado');
+    africaBtn.classList.remove('nav-seleccionado');
+    asiaBtn.classList.remove('nav-seleccionado');
+    americaBtn.classList.remove('nav-seleccionado');
+    oceaniaBtn.classList.remove('nav-seleccionado');
+}
+
 // Botón Europa del nav
 europaBtn.addEventListener("click", () => {
     borrarBanderas();
     let flagMatch = paises.filter(({ continente }) => continente === "Europa");
     matchBanderas(flagMatch);
    
+    borrarSelecionado();
     europaBtn.classList.add('nav-seleccionado');
 });
 
@@ -107,6 +117,7 @@ africaBtn.addEventListener("click", () => {
     let flagMatch = paises.filter(({ continente }) => continente === "Africa");
     matchBanderas(flagMatch);
 
+    borrarSelecionado();
     africaBtn.classList.add('nav-seleccionado');
 });
 
@@ -117,6 +128,7 @@ asiaBtn.addEventListener("click", () => {
     let flagMatch = paises.filter(({ continente }) => continente === "Asia");
     matchBanderas(flagMatch);
 
+    borrarSelecionado();
     asiaBtn.classList.add('nav-seleccionado');
 });
 
@@ -127,6 +139,7 @@ americaBtn.addEventListener("click", () => {
     let flagMatch = paises.filter(({ continente }) => continente === "America");
     matchBanderas(flagMatch);
 
+    borrarSelecionado();
     americaBtn.classList.add('nav-seleccionado');
 });
 
@@ -137,6 +150,7 @@ oceaniaBtn.addEventListener("click", () => {
     let flagMatch = paises.filter(({ continente }) => continente === "Oceania");
     matchBanderas(flagMatch);
 
+    borrarSelecionado();
     oceaniaBtn.classList.add('nav-seleccionado');
 });
 
