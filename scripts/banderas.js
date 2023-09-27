@@ -7,7 +7,6 @@
     a: "Estonia",
     b: "Letonia",
     c: "Lituania",
-    url: "../images/bandera1.gif",
     correct: "a",
 },
 {
@@ -17,7 +16,6 @@
     a: "Georgia",
     b: "Azerbaiyan",
     c: "Armenia",
-    url: "../images/bandera2.gif",
     correct: "c",
 },
 {
@@ -27,7 +25,6 @@
     a: "Georgia",
     b: "Azerbaiyán",
     c: "Armenia",
-    url: "../images/bandera3.gif",
     correct: "b",
 },
 {
@@ -37,7 +34,6 @@
     a: "Comoras",
     b: "Camerún",
     c: "Sudán del Sur",
-    url: "../images/bandera4.gif",
     correct: "a",
 },
 {
@@ -47,7 +43,6 @@
     a: "Rep. del Congo",
     b: "Sahara Occidental",
     c: "Zimbabue",
-    url: "../images/bandera5.gif",
     correct: "c",
 },
 {
@@ -57,7 +52,6 @@
     a: "Chad",
     b: "Suazilandia",
     c: "Benín",
-    url: "../images/bandera6.gif",
     correct: "b",
 },
 {
@@ -67,7 +61,6 @@
     a: "Afganistán",
     b: "Pakistan",
     c: "Irak",
-    url: "../images/bandera7.gif",
     correct: "a",
 },
 {
@@ -77,7 +70,6 @@
     a: "Bangladesh",
     b: "Nepal",
     c: "Bután",
-    url: "../images/bandera8.gif",
     correct: "c",
 },
 {
@@ -87,7 +79,6 @@
     a: "Singapur",
     b: "Brunei",
     c: "Indonesia",
-    url: "../images/bandera9.gif",
     correct: "b",
 },
 {
@@ -97,7 +88,6 @@
     a: "San Vicente y Las Granadinas",
     b: "Santa Lucía",
     c: "Barbado",
-    url: "../images/bandera10.gif",
     correct: "a",
 },
 {
@@ -107,7 +97,6 @@
     a: "Surinam",
     b: "Aruba",
     c: "Belmopán",
-    url: "../images/bandera11.gif",
     correct: "c",
 },
 {
@@ -117,7 +106,6 @@
     a: "Surinam",
     b: "Castries",
     c: "Bonaire",
-    url: "../images/bandera12.gif",
     correct: "b",
 },
 {
@@ -127,7 +115,6 @@
     a: "Nauru",
     b: "Islas Marshall",
     c: "Tokelau",
-    url: "../images/bandera13.gif",
     correct: "a",
 },
 {
@@ -137,7 +124,6 @@
     a: "Nauru",
     b: "Islas Marshall",
     c: "Kiribati",
-    url: "../images/bandera14.gif",
     correct: "c",
 },
 {
@@ -147,7 +133,6 @@
     a: "Nueva Caledonia",
     b: "Vanuatu",
     c: "Fiyi",
-    url: "../images/bandera15.gif",
     correct: "b",
 },
 ];

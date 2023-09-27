@@ -36,7 +36,7 @@ function cargarPregunta() {
         console.log(numSave);
         pregunta.innerText = banderas[numRandom].question;
 
-        bandera.src = banderas[numRandom].url;
+        bandera.src = banderas[numRandom].bandera;
         bandera.classList.add("flag");
 
         resp1.innerText = banderas[numRandom].a;
