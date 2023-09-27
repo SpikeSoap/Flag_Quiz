@@ -1,20 +1,32 @@
- import banderas from "./banderas.js";
+import banderas from "./banderas.js";
 
 
 //CONSTANTES
-const cargaPregunta = document.querySelector(".carga-pregunta");
 const btnSiguiente = document.querySelector(".btn-siguiente");
+const btnlimpiar = document.querySelector(".btn-limpiar");
 
 let pregunta = document.querySelector(".pregunta");
 let bandera = document.querySelector(".img-bandera");
 let resp1 = document.querySelector(".resp1");
 let resp2 = document.querySelector(".resp2");
 let resp3 = document.querySelector(".resp3");
+let input1 = document.querySelector("#input1");
+let input2 = document.querySelector("#input2");
+let input3 = document.querySelector("#input3");
+let acierto = document.querySelector("#aciertos");
+let fallo = document.querySelector("#fallos");
+let total = document.querySelector("#total");
+
 let numRandom = 0;
 let numSave = [];
+let aciertos = 0;
+let fallos = 0;
 
 
 function cargarPregunta() {
+    input1.checked = false;
+    input2.checked = false;
+    input3.checked = false;
 
     numRandom = Math.floor(Math.random() * banderas.length);
 
@@ -37,6 +49,29 @@ function cargarPregunta() {
     }
 }
 
+function corregirPreguntas() {
+    let correcto = banderas[numRandom].correct;
+
+    if (input1.checked && correcto == input1.value) {
+        console.log("La 1ra opción es la correcta");
+        aciertos++;
+        acierto.value = aciertos;
+    } else if (input2.checked && correcto == input2.value) {
+        console.log("La 2nda opción es la correcta");
+        aciertos++;
+        acierto.value = aciertos;
+    } else if (input3.checked && correcto == input3.value) {
+        console.log("La 3ra opción es la correcta");
+        aciertos++;
+        acierto.value = aciertos;
+    } else {
+        console.log("Mal");
+        fallos++;
+        fallo.value = fallos;
+    }
+
+    total.value = fallos + aciertos;
+};
 
 document.addEventListener('DOMContentLoaded', () => {
     cargarPregunta();
@@ -44,11 +79,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
 btnSiguiente.addEventListener("click", () => {
 
-    if (numSave.length === banderas.length) {
+    if (numSave.length <= banderas.length) {
+        corregirPreguntas();
+
+        cargarPregunta();
+    } else {
         console.log("Ya han salido todas las preguntas");
         numSave = [];
-    }else{
-        cargarPregunta();
     }
 });
+
+
+btnlimpiar.addEventListener("click", ()=>{
+    input1.checked = false;
+    input2.checked = false;
+    input3.checked = false;
+
+        acierto.value = 0;
+        fallo.value = 0;
+        total.value = 0;
+        
+       
+        aciertos= 0;
+        fallos= 0;  
+});
+
+
+
 

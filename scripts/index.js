@@ -23,6 +23,7 @@ function cargarBanderas(){
 
         let titleBandera = document.createElement('h3');
         titleBandera.innerText = banderas[i].nombre;
+        titleBandera.className = "flag-des";
         artBandera.appendChild(titleBandera);
 
         let flag = document.createElement('img');
@@ -32,6 +33,7 @@ function cargarBanderas(){
 
         let capital = document.createElement('p');
         capital.innerText = banderas[i].capital;
+        capital.className = "flag-des";
         artBandera.appendChild(capital);
     }
 };

@@ -34,35 +34,55 @@
                     <li class="main-index_ul_li oceania-btn">Oceanía</li>
                 </ul>
             </nav>
-                <section class="carga-pregunta">
-                    <div class="formulario">
-                        <form class="opcion1" >
-                            <h3 class="pregunta"></h3>
-                            <figure>
-                                <img class="img-bandera" src="" alt="">
-                            </figure>
-                            <article class="respuesta-container">
-                                <input type="radio" name="elegir" value="a" id="input1">
-                                <p class="resp1"></p>
-                            </article>
-        
-                            <article class="respuesta-container">
-                                <input type="radio" name="elegir" value="b" id="input2">
-                                <p class="resp2"> </p>
-                            </article>
-        
-                            <article class="respuesta-container">
-                                <input type="radio" name="elegir" value="c" id="input3">
-                                <p class="resp3"></p>
-                            </article>
+            <section class="carga-pregunta">
+                <div class="formulario">
+                    <form class="opcion1">
+                        <h3 class="pregunta"></h3>
+                        <figure>
+                            <img class="img-bandera" src="" alt="bandera">
+                        </figure>
+                        <article class="respuesta-container">
+                            <input type="radio" name="elegir" value="a" id="input1">
+                            <p class="resp1"></p>
+                        </article>
+
+                        <article class="respuesta-container">
+                            <input type="radio" name="elegir" value="b" id="input2">
+                            <p class="resp2"> </p>
+                        </article>
+
+                        <article class="respuesta-container">
+                            <input type="radio" name="elegir" value="c" id="input3">
+                            <p class="resp3"></p>
+                        </article>
+                        <article class="botonera">
                             <button type='button' class="btn-siguiente">Siguiente</button>
-                        </form>
+                            <button class="btn-terminar"
+                             type="button">Terminar</button>
+                            <button type="button" class="btn-limpiar">Limpiar</button>
+                        </article>
+                    </form>
+                </div>
+                <section id="fire">
+                    <div class="resultado res1">
+                        <h3>Aciertos</h3>
+                        <input type="text" id="aciertos">
+                    </div>
+                    <div class="resultado res2">
+                        <h3>Fallos</h3>
+                        <input type="text"  id="fallos">
+                    </div>
+                    <div class="resultado res3">
+                        <h3>Total</h3>
+                        <input type="text"  id="total">
                     </div>
                 </section>
+            </section>
+            
         </main>
 
 
-        
+
         <footer>
 
         </footer>
@@ -71,7 +91,7 @@
     </div>
 
     <!-- Scripts -->
-    <script  type="module" src="../scripts/quiz.js"></script>
+    <script type="module" src="../scripts/quiz.js"></script>
 </body>
 
 </html>

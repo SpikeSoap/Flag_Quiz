@@ -2,7 +2,7 @@
 
  let banderas = [{
     id: 1,
-    bandera: "../images/bandera1.gif", nombre: "Estonia", capital: "Tallín", continente: "Europa",
+    bandera: "../images/bandera1.jpg", nombre: "Estonia", capital: "Tallín", continente: "Europa",
     question: " 1) )¿A qué país pertenece esta bandera?",
     a: "Estonia",
     b: "Letonia",
@@ -12,7 +12,7 @@
 },
 {
     id: 2,
-    bandera: "../images/bandera2.gif", nombre: "Armenia", capital: "Ereván", continente: "Europa",
+    bandera: "../images/bandera2.jpg", nombre: "Armenia", capital: "Ereván", continente: "Europa",
     question: " 2) )¿A qué país pertenece esta bandera?",
     a: "Georgia",
     b: "Azerbaiyan",
@@ -22,7 +22,7 @@
 },
 {
     id: 3,
-    bandera: "../images/bandera3.gif", nombre: "Azerbaiyán", capital: "Bakú", continente: "Europa",
+    bandera: "../images/bandera3.jpg", nombre: "Azerbaiyán", capital: "Bakú", continente: "Europa",
     question: " 3) )¿A qué país pertenece esta bandera?",
     a: "Georgia",
     b: "Azerbaiyán",
@@ -32,7 +32,7 @@
 },
 {
     id: 4,
-    bandera: "../images/bandera4.gif", nombre: "Comoras", capital: "Moroni", continente: "Africa",
+    bandera: "../images/bandera4.jpg", nombre: "Comoras", capital: "Moroni", continente: "Africa",
     question: " 4) )¿A qué país pertenece esta bandera?",
     a: "Comoras",
     b: "Camerún",
@@ -42,7 +42,7 @@
 },
 {
     id: 5,
-    bandera: "../images/bandera5.gif", nombre: "Zimbabue", capital: "Harare", continente: "Africa",
+    bandera: "../images/bandera5.jpg", nombre: "Zimbabue", capital: "Harare", continente: "Africa",
     question: " 5) )¿A qué país pertenece esta bandera?",
     a: "Rep. del Congo",
     b: "Sahara Occidental",
@@ -52,7 +52,7 @@
 },
 {
     id: 6,
-    bandera: "../images/bandera6.gif", nombre: "Suazilandia", capital: "Esuatini", continente: "Africa",
+    bandera: "../images/bandera6.jpg", nombre: "Suazilandia", capital: "Esuatini", continente: "Africa",
     question: " 6) )¿A qué país pertenece esta bandera?",
     a: "Chad",
     b: "Suazilandia",
@@ -62,7 +62,7 @@
 },
 {
     id: 7,
-    bandera: "../images/bandera7.gif", nombre: "Afganistán", capital: "Kabul", continente: "Asia",
+    bandera: "../images/bandera7.jpg", nombre: "Afganistán", capital: "Kabul", continente: "Asia",
     question: " 7) )¿A qué país pertenece esta bandera?",
     a: "Afganistán",
     b: "Pakistan",
@@ -72,7 +72,7 @@
 },
 {
     id: 8,
-    bandera: "../images/bandera8.gif", nombre: "Bután", capital: "Timbu", continente: "Asia",
+    bandera: "../images/bandera8.jpg", nombre: "Bután", capital: "Timbu", continente: "Asia",
     question: " 8) )¿A qué país pertenece esta bandera?",
     a: "Bangladesh",
     b: "Nepal",
@@ -82,7 +82,7 @@
 },
 {
     id: 9,
-    bandera: "../images/bandera9.gif", nombre: "Brunei", capital: "Bandar Seri Begawan", continente: "Asia",
+    bandera: "../images/bandera9.jpg", nombre: "Brunei", capital: "Bandar Seri Begawan", continente: "Asia",
     question: " 9) )¿A qué país pertenece esta bandera?",
     a: "Singapur",
     b: "Brunei",
@@ -92,7 +92,7 @@
 },
 {
     id: 10,
-    bandera: "../images/bandera10.gif", nombre: "Las Granadinas", capital: "Kinstown", continente: "America",
+    bandera: "../images/bandera10.jpg", nombre: "Las Granadinas", capital: "Kinstown", continente: "America",
     question: " 10) )¿A qué país pertenece esta bandera?",
     a: "San Vicente y Las Granadinas",
     b: "Santa Lucía",
@@ -102,27 +102,27 @@
 },
 {
     id: 11,
-    bandera: "../images/bandera11.gif", nombre: "Bonaire", capital: "Kralendijk", continente: "America",
+    bandera: "../images/bandera11.jpg", nombre: "Belice", capital: "Belmopán", continente: "America",
     question: " 11) )¿A qué país pertenece esta bandera?",
     a: "Surinam",
     b: "Aruba",
-    c: "Bonaire",
+    c: "Belmopán",
     url: "../images/bandera11.gif",
     correct: "c",
 },
 {
     id: 12,
-    bandera: "../images/bandera12.gif", nombre: "Aruba", capital: "Oranjestad", continente: "America",
+    bandera: "../images/bandera12.jpg", nombre: "Santa Lucía", capital: "Castries", continente: "America",
     question: " 12) )¿A qué país pertenece esta bandera?",
     a: "Surinam",
-    b: "Aruba",
+    b: "Castries",
     c: "Bonaire",
     url: "../images/bandera12.gif",
     correct: "b",
 },
 {
     id: 13,
-    bandera: "../images/bandera13.gif", nombre: "Nauru", capital: "Yaren", continente: "Oceania",
+    bandera: "../images/bandera13.jpg", nombre: "Nauru", capital: "Yaren", continente: "Oceania",
     question: " 13) )¿A qué país pertenece esta bandera?",
     a: "Nauru",
     b: "Islas Marshall",
@@ -132,17 +132,17 @@
 },
 {
     id: 14,
-    bandera: "../images/bandera14.gif", nombre: "Tokelau", capital: "Atafu", continente: "Oceania",
+    bandera: "../images/bandera14.jpg", nombre: "Kiribati", capital: "Tarawa", continente: "Oceania",
     question: " 14) )¿A qué país pertenece esta bandera?",
     a: "Nauru",
     b: "Islas Marshall",
-    c: "Tokelau",
+    c: "Kiribati",
     url: "../images/bandera14.gif",
     correct: "c",
 },
 {
     id: 15,
-    bandera: "../images/bandera15.gif", nombre: "Vanuatu", capital: "Port Vila", continente: "Oceania",
+    bandera: "../images/bandera15.jpg", nombre: "Vanuatu", capital: "Port Vila", continente: "Oceania",
     question: " 15) )¿A qué país pertenece esta bandera?",
     a: "Nueva Caledonia",
     b: "Vanuatu",
