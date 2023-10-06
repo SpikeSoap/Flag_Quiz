@@ -53,6 +53,7 @@ logo.addEventListener("click", ()=>{
 
     borrarBanderas();
     cargarBanderas();
+    borrarSelecionado();
 });
 
 //Se cargan solo las banderas que corresponden
