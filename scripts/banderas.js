@@ -3,7 +3,7 @@
  let banderas = [{
     id: 1,
     bandera: "../images/bandera1.jpg", nombre: "Estonia", capital: "Tallín", continente: "Europa",
-    question: " 1) )¿A qué país pertenece esta bandera?",
+    question: " 1) ¿A qué país pertenece esta bandera?",
     a: "Estonia",
     b: "Letonia",
     c: "Lituania",
@@ -12,7 +12,7 @@
 {
     id: 2,
     bandera: "../images/bandera2.jpg", nombre: "Armenia", capital: "Ereván", continente: "Europa",
-    question: " 2) )¿A qué país pertenece esta bandera?",
+    question: " 2) ¿A qué país pertenece esta bandera?",
     a: "Georgia",
     b: "Azerbaiyan",
     c: "Armenia",
@@ -21,7 +21,7 @@
 {
     id: 3,
     bandera: "../images/bandera3.jpg", nombre: "Azerbaiyán", capital: "Bakú", continente: "Europa",
-    question: " 3) )¿A qué país pertenece esta bandera?",
+    question: " 3) ¿A qué país pertenece esta bandera?",
     a: "Georgia",
     b: "Azerbaiyán",
     c: "Armenia",
@@ -30,7 +30,7 @@
 {
     id: 4,
     bandera: "../images/bandera4.jpg", nombre: "Comoras", capital: "Moroni", continente: "Africa",
-    question: " 4) )¿A qué país pertenece esta bandera?",
+    question: " 4) ¿A qué país pertenece esta bandera?",
     a: "Comoras",
     b: "Camerún",
     c: "Sudán del Sur",
@@ -39,7 +39,7 @@
 {
     id: 5,
     bandera: "../images/bandera5.jpg", nombre: "Zimbabue", capital: "Harare", continente: "Africa",
-    question: " 5) )¿A qué país pertenece esta bandera?",
+    question: " 5) ¿A qué país pertenece esta bandera?",
     a: "Rep. del Congo",
     b: "Sahara Occidental",
     c: "Zimbabue",
@@ -48,7 +48,7 @@
 {
     id: 6,
     bandera: "../images/bandera6.jpg", nombre: "Suazilandia", capital: "Esuatini", continente: "Africa",
-    question: " 6) )¿A qué país pertenece esta bandera?",
+    question: " 6) ¿A qué país pertenece esta bandera?",
     a: "Chad",
     b: "Suazilandia",
     c: "Benín",
@@ -57,7 +57,7 @@
 {
     id: 7,
     bandera: "../images/bandera7.jpg", nombre: "Afganistán", capital: "Kabul", continente: "Asia",
-    question: " 7) )¿A qué país pertenece esta bandera?",
+    question: " 7) ¿A qué país pertenece esta bandera?",
     a: "Afganistán",
     b: "Pakistan",
     c: "Irak",
@@ -66,7 +66,7 @@
 {
     id: 8,
     bandera: "../images/bandera8.jpg", nombre: "Bután", capital: "Timbu", continente: "Asia",
-    question: " 8) )¿A qué país pertenece esta bandera?",
+    question: " 8) ¿A qué país pertenece esta bandera?",
     a: "Bangladesh",
     b: "Nepal",
     c: "Bután",
@@ -75,7 +75,7 @@
 {
     id: 9,
     bandera: "../images/bandera9.jpg", nombre: "Brunei", capital: "Bandar Seri Begawan", continente: "Asia",
-    question: " 9) )¿A qué país pertenece esta bandera?",
+    question: " 9) ¿A qué país pertenece esta bandera?",
     a: "Singapur",
     b: "Brunei",
     c: "Indonesia",
@@ -84,7 +84,7 @@
 {
     id: 10,
     bandera: "../images/bandera10.jpg", nombre: "Las Granadinas", capital: "Kinstown", continente: "America",
-    question: " 10) )¿A qué país pertenece esta bandera?",
+    question: " 10) ¿A qué país pertenece esta bandera?",
     a: "San Vicente y Las Granadinas",
     b: "Santa Lucía",
     c: "Barbado",
@@ -93,7 +93,7 @@
 {
     id: 11,
     bandera: "../images/bandera11.jpg", nombre: "Belice", capital: "Belmopán", continente: "America",
-    question: " 11) )¿A qué país pertenece esta bandera?",
+    question: " 11) ¿A qué país pertenece esta bandera?",
     a: "Surinam",
     b: "Aruba",
     c: "Belmopán",
@@ -102,7 +102,7 @@
 {
     id: 12,
     bandera: "../images/bandera12.jpg", nombre: "Santa Lucía", capital: "Castries", continente: "America",
-    question: " 12) )¿A qué país pertenece esta bandera?",
+    question: " 12) ¿A qué país pertenece esta bandera?",
     a: "Surinam",
     b: "Castries",
     c: "Bonaire",
@@ -111,7 +111,7 @@
 {
     id: 13,
     bandera: "../images/bandera13.jpg", nombre: "Nauru", capital: "Yaren", continente: "Oceania",
-    question: " 13) )¿A qué país pertenece esta bandera?",
+    question: " 13) ¿A qué país pertenece esta bandera?",
     a: "Nauru",
     b: "Islas Marshall",
     c: "Tokelau",
@@ -120,7 +120,7 @@
 {
     id: 14,
     bandera: "../images/bandera14.jpg", nombre: "Kiribati", capital: "Tarawa", continente: "Oceania",
-    question: " 14) )¿A qué país pertenece esta bandera?",
+    question: " 14) ¿A qué país pertenece esta bandera?",
     a: "Nauru",
     b: "Islas Marshall",
     c: "Kiribati",
@@ -129,12 +129,13 @@
 {
     id: 15,
     bandera: "../images/bandera15.jpg", nombre: "Vanuatu", capital: "Port Vila", continente: "Oceania",
-    question: " 15) )¿A qué país pertenece esta bandera?",
+    question: " 15) ¿A qué país pertenece esta bandera?",
     a: "Nueva Caledonia",
     b: "Vanuatu",
     c: "Fiyi",
     correct: "b",
 },
 ];
+
 
 export default banderas;

@@ -1,9 +1,10 @@
 import banderas from "./banderas.js";
 
-
 //CONSTANTES
 const btnSiguiente = document.querySelector(".btn-siguiente");
-const btnlimpiar = document.querySelector(".btn-limpiar");
+const btnLimpiar = document.querySelector(".btn-limpiar");
+const btnTerminar = document. querySelector(".btn-terminar");
+const logo = document.querySelector(".header-index_figure_img");
 
 let pregunta = document.querySelector(".pregunta");
 let bandera = document.querySelector(".img-bandera");
@@ -17,8 +18,8 @@ let acierto = document.querySelector("#aciertos");
 let fallo = document.querySelector("#fallos");
 let total = document.querySelector("#total");
 
-let numRandom = 0;
 let numSave = [];
+let numRandom = 0;
 let aciertos = 0;
 let fallos = 0;
 
@@ -90,7 +91,7 @@ btnSiguiente.addEventListener("click", () => {
 });
 
 
-btnlimpiar.addEventListener("click", ()=>{
+btnLimpiar.addEventListener("click", ()=>{
     input1.checked = false;
     input2.checked = false;
     input3.checked = false;
@@ -104,6 +105,15 @@ btnlimpiar.addEventListener("click", ()=>{
         fallos= 0;  
 });
 
+
+logo.addEventListener("click", ()=>{
+    location.href = "../index.html"
+});
+
+
+btnTerminar.addEventListener("click", ()=>{
+
+});
 
 
 

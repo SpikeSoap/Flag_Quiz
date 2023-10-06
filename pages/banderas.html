@@ -22,76 +22,72 @@
             <figure class="header-index_figure">
                 <img class="header-index_figure_img" src="../images/logo.png" alt="logo del proyecto">
             </figure>
-            <h1 class="header-index_title">Banderas del mundo</h1>
+            <h2 class="header-index_title">Quiz de banderas</h2>
         </header>
         <main class="main-index">
-            <nav class="main-index-nav">
-                <ul class="main-index_ul">
-                    <li class="main-index_ul_li europa-btn">Europa</li>
-                    <li class="main-index_ul_li africa-btn">África</li>
-                    <li class="main-index_ul_li asia-btn">Asia</li>
-                    <li class="main-index_ul_li america-btn">América</li>
-                    <li class="main-index_ul_li oceania-btn">Oceanía</li>
-                </ul>
-            </nav>
-            <section class="carga-pregunta">
-                <div class="formulario">
-                    <form class="opcion1">
-                        <h3 class="pregunta"></h3>
-                        <figure>
-                            <img class="img-bandera" src="" alt="bandera">
-                        </figure>
-                        <article class="respuesta-container">
+            <section class="carga-preguntas">
+                <section class="cuestionario">
+                    <form class="formulario">
+                        <div>
+                            <h3 class="pregunta"></h3>
+                        <div class="respuesta-container">
                             <input type="radio" name="elegir" value="a" id="input1">
                             <p class="resp1"></p>
-                        </article>
-
-                        <article class="respuesta-container">
+                        </div>
+                        <div class="respuesta-container">
                             <input type="radio" name="elegir" value="b" id="input2">
                             <p class="resp2"> </p>
-                        </article>
-
-                        <article class="respuesta-container">
+                        </div>
+                        <div class="respuesta-container">
                             <input type="radio" name="elegir" value="c" id="input3">
                             <p class="resp3"></p>
-                        </article>
-                        <article class="botonera">
-                            <button type='button' class="btn-siguiente">Siguiente</button>
-                            <button class="btn-terminar"
-                             type="button">Terminar</button>
-                            <button type="button" class="btn-limpiar">Limpiar</button>
-                        </article>
+                        </div>
+                    </div>
+                    <figure class="bandera-container">
+                        <img class="img-bandera" src="" alt="bandera">
+                    </figure>
                     </form>
-                </div>
-                <section id="fire">
+
+                    <div class="botonera">
+                        <button type='button' class="btn-siguiente btn">Siguiente</button>
+                        <button class="btn-terminar btn" type="button">Terminar</button>
+                        <button type="button" class="btn-limpiar btn">Limpiar</button>
+                    </div>
+                </section>
+
+                <section class="resultados">
                     <div class="resultado res1">
                         <h3>Aciertos</h3>
-                        <input type="text" id="aciertos">
+                        <input type="text" id="aciertos" class="resultado-input">
                     </div>
                     <div class="resultado res2">
                         <h3>Fallos</h3>
-                        <input type="text"  id="fallos">
+                        <input type="text" id="fallos" class="resultado-input">
                     </div>
                     <div class="resultado res3">
                         <h3>Total</h3>
-                        <input type="text"  id="total">
+                        <input type="text" id="total" class="resultado-input">
                     </div>
                 </section>
             </section>
-            
         </main>
-
-
-
-        <footer>
-
-        </footer>
-
+         <!-- MODAL -->
+         <section class="modal-container">
+            <button class="btn-close">
+                <img class="btn-close_img" src="../images/close icon.png" alt="close cross">
+            </button>
+            <article class="modal">
+                <h2 class="modal-title">¿Deseas terminar?</h2>
+                <button class="btn-empezar" >Aceptar</button>
+            </article>
+        </section>
+        <!-- FIN MODAL -->
 
     </div>
 
     <!-- Scripts -->
     <script type="module" src="../scripts/quiz.js"></script>
+    <script src="../scripts/banderaModal.js"></script>
 </body>
 
 </html>
