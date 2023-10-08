@@ -124,7 +124,6 @@
     align-items: center;
     gap: 5%;
     flex-flow: column;
-
 }
 
 .flag {
@@ -132,8 +131,9 @@
 }
 
 .flag-des {
-    font-size: 3vw;
+    font-size: 1.5vw;
     color: var(--verde);
+    text-align: center;
 }
 
 
@@ -353,6 +353,15 @@
     }
 
     .main-index_ul_li{
+        font-size: 3vw;
+    }
+
+
+    .artBandera{
+        height: 10vh;
+    }
+
+    .flag-des {
         font-size: 3vw;
     }
 
