@@ -6,58 +6,108 @@ import banderas from "./banderas.js";
 
 const cargaBanderas = document.querySelector(".carga-banderas");
 const logo = document.querySelector(".header-index_figure_img");
-
-// Botones del nav del menú
+const containerIndex = document.querySelector(".container-index");
 const europaBtn = document.querySelector(".europa-btn");
 const africaBtn = document.querySelector(".africa-btn");
 const asiaBtn = document.querySelector(".asia-btn");
 const americaBtn = document.querySelector(".america-btn");
 const oceaniaBtn = document.querySelector(".oceania-btn");
 
-// Cargar el listado de banderas
-function cargarBanderas(){
-    for (let i = 0; i < banderas.length; i++) {
-        let artBandera = document.createElement('article');
-        artBandera.className = "artBandera";
-        cargaBanderas.append(artBandera);
-
-        let titleBandera = document.createElement('h3');
-        titleBandera.innerText = banderas[i].nombre;
-        titleBandera.className = "flag-des";
-        artBandera.appendChild(titleBandera);
-
-        let flag = document.createElement('img');
-        flag.src = banderas[i].bandera;
-        flag.className = "flag";
-        artBandera.appendChild(flag);
-
-        let capital = document.createElement('p');
-        capital.innerText = banderas[i].capital;
-        capital.className = "flag-des";
-        artBandera.appendChild(capital);
-    }
-};
-
-function borrarBanderas(){
-    cargaBanderas.innerHTML = "";
-}
+// Prueba para el paginado de las banderas
+let pagActual = 1;
+const elementoPorPag = 12;
 
 document.addEventListener('DOMContentLoaded', () => {
     cargarBanderas();
 
 });
 
+function borrarBanderas() {
+    cargaBanderas.innerHTML = "";
+}
+
+// Cargar el listado de banderas
+function cargarBanderas() {
+    borrarBanderas();
+
+    let inicio = (pagActual - 1) * elementoPorPag;
+    let fin = pagActual * elementoPorPag;
+
+    for (let i = inicio; i < fin && i < banderas.length; i++) {
+        const artBandera = document.createElement('article');
+        artBandera.className = "artBandera";
+        cargaBanderas.append(artBandera);
+
+        const titleBandera = document.createElement('h3');
+        titleBandera.innerText = banderas[i].nombre;
+        titleBandera.className = "flag-des";
+        artBandera.appendChild(titleBandera);
+
+        const flag = document.createElement('img');
+        flag.src = banderas[i].bandera;
+        flag.className = "flag";
+        artBandera.appendChild(flag);
+
+        const capital = document.createElement('p');
+        capital.innerText = banderas[i].capital;
+        capital.className = "flag-des";
+        artBandera.appendChild(capital);
+    }
+
+    mostrarNumerosDePagina();
+};
+
+function mostrarNumerosDePagina() {
+    const totalPaginas = Math.ceil(banderas.length / elementoPorPag);
+
+    // Crea un elemento div para mostrar los números de página.
+    const paginacion = document.createElement('div');
+    paginacion.className = 'paginacion';
+    cargaBanderas.append(paginacion);
+
+    const lineaSup = document.createElement('hr');
+    lineaSup.classList = "lineaSup";
+    paginacion.appendChild(lineaSup);
+
+    for (let i = 1; i <= totalPaginas; i++) {
+       
+        const numeroPagina = document.createElement('span');
+        numeroPagina.innerText = i;
+        numeroPagina.className = i === pagActual ? 'pagina-actual' : '';
+
+        // Agrega un event listener para cambiar la página al hacer clic en un número.
+        numeroPagina.addEventListener('click', () => {
+            pagActual = i;
+            cargarBanderas();
+            mostrarNumerosDePagina();
+        });
+
+        paginacion.appendChild(numeroPagina);
+    }
+
+    // Borra cualquier paginación anterior y agrega la nueva.
+    const paginacionAnterior = document.querySelector('.paginacion');
+    if (paginacionAnterior) {
+        paginacionAnterior.remove();
+    }
+    cargaBanderas.appendChild(paginacion);
+}
+
+
+
 
 //Cargar todas las banderas cuando click en la imágen del logo
-logo.addEventListener("click", ()=>{
+logo.addEventListener("click", () => {
 
     borrarBanderas();
     cargarBanderas();
     borrarSelecionado();
+
+    containerIndex.classList.remove('container-index_selec');
 });
 
 //Se cargan solo las banderas que corresponden
-function matchBanderas(flagMatch){
+function matchBanderas(flagMatch) {
 
     for (let i = 0; i < flagMatch.length; i++) {
         let artBandera = document.createElement('article');
@@ -88,14 +138,21 @@ function borrarSelecionado() {
     oceaniaBtn.classList.remove('nav-seleccionado');
 }
 
+function corregirAltura() {
+    containerIndex.classList.remove('container-index_selec');
+    containerIndex.classList.add('container-index_selec');
+}
+
 // Botón Europa del nav
 europaBtn.addEventListener("click", () => {
     borrarBanderas();
     let flagMatch = banderas.filter(({ continente }) => continente === "Europa");
     matchBanderas(flagMatch);
-   
+
     borrarSelecionado();
     europaBtn.classList.add('nav-seleccionado');
+
+    corregirAltura();
 });
 
 // Botón África del nav
@@ -106,6 +163,8 @@ africaBtn.addEventListener("click", () => {
 
     borrarSelecionado();
     africaBtn.classList.add('nav-seleccionado');
+
+    corregirAltura();
 });
 
 
@@ -117,6 +176,8 @@ asiaBtn.addEventListener("click", () => {
 
     borrarSelecionado();
     asiaBtn.classList.add('nav-seleccionado');
+
+    corregirAltura();
 });
 
 
@@ -128,6 +189,8 @@ americaBtn.addEventListener("click", () => {
 
     borrarSelecionado();
     americaBtn.classList.add('nav-seleccionado');
+
+    corregirAltura();
 });
 
 
@@ -139,6 +202,8 @@ oceaniaBtn.addEventListener("click", () => {
 
     borrarSelecionado();
     oceaniaBtn.classList.add('nav-seleccionado');
+
+    corregirAltura();
 });
 
 

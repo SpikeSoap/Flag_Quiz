@@ -26,9 +26,14 @@
 
 .container-index {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     margin: auto;
     background-color: var(--verde);
+}
+
+.container-index_selec {
+    height: 100vh;
+
 }
 
 .header-index {
@@ -47,7 +52,7 @@
 
 .header-index_title {
     font-family: 'Kaushan';
-    font-size: 10vh;
+    font-size: 7vw;
     color: var(--blanco);
 }
 
@@ -78,7 +83,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5vh;
+    font-size: 2.5vw;
     color: var(--blanco);
 }
 
@@ -98,7 +103,7 @@
 
 .carga-banderas {
     width: 100%;
-    height: 90vh;
+    height: auto;
     padding-top: 3%;
     display: flex;
     justify-content: center;
@@ -110,6 +115,7 @@
 
 .artBandera {
     width: 12vw;
+    height: 25vh;
     display: flex;
     align-items: center;
     gap: 5%;
@@ -126,11 +132,29 @@
 }
 
 
+.paginacion{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+    color: var(--verde);
+}
+
+.lineaSup{
+    height: 1px;
+    width: 80%;
+    margin: auto;
+}
+
+.pagina-actual{
+    font-size: 2vw;
+    color: var(--verde-oscuro);
+}
+
 /* INICIO MODAL */
 
 .modal-container {
     width: 30vw;
-    height: 20vw;
+    height: 40vh;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -143,8 +167,8 @@
     width: 2vw;
     height: 4, 5vh;
     position: absolute;
-    top: 5%;
-    right: 5%;
+    top: 9%;
+    right: 6%;
     background-color: transparent;
     border: 0;
 }
@@ -186,13 +210,29 @@
 
 /* FIN MODAL */
 /**/
+
+
+/*BORRAR*/
+
+
+
+
+/*BORRAR*/
+
 /* FIN index.html*/
 /**/
 /*INICIO banderas.html*/
 
+.container-bandera {
+    width: 100%;
+    height: 105vh;
+    margin: auto;
+    background-color: var(--verde);
+}
+
 .carga-preguntas {
     width: 100%;
-    height: 65vh;
+    height: 70vh;
     padding-top: 3%;
     display: flex;
     flex-flow: row;
@@ -202,54 +242,67 @@
 }
 
 .cuestionario {
-    width: 60%;
-    height: 100%;
+    width: 70%;
     display: flex;
     flex-flow: column;
-    gap: 20%;
+    gap: 5%;
 }
 
 .formulario {
     display: flex;
     justify-content: space-between;
+    gap: 20%;
 }
 
-.pregunta{
-    font-size: 5vh;
+.pregunta {
+    font-size: 3vw;
 }
 
-.respuesta-container{
+.respuesta-container {
     margin: 5%;
     display: flex;
-    justify-content:left;
+    justify-content: left;
     gap: 2%;
 }
 
-.bandera-container{
-    width: 20%;
-    padding-block-start: 7%;
+.resp {
+    font-size: 2vw;
 }
 
-.img-bandera{
+.bandera-container {
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.bander-figure {
     width: 100%;
+
+}
+
+.img-bandera {
+    width: 100%;
+
 }
 
 .botonera {
-    height: 10%;
+    height: 15%;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 5%;
-    
 }
 
-.btn{
+.btn {
     width: 15%;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: var(--amarillo);
     color: var(--verde-oscuro);
     font-size: 1.5vw;
-    
+    padding: 1%;
+    display: flex;
+    justify-content: center;
 }
 
 .resultados {
@@ -261,7 +314,7 @@
 }
 
 
-.resultado{
+.resultado {
     height: 10vh;
     display: flex;
     flex-flow: column;
@@ -280,16 +333,80 @@
 
 /* RESPONSIVE */
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
+    .header-index {
+        height: 20vh;
+    }
 
+    .modal-container {
+        width: 30vw;
+        height: 25vh;
+    }
+
+    .btn-close {
+        position: absolute;
+        top: 12%;
+        right: 10%;
+    }
+
+    .container-bandera {
+        height: auto;
+    }
+
+    .carga-preguntas {
+        width: 100%;
+        height: auto;
+        padding: 3%;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .cuestionario {
+        width: 100%;
+    }
+
+    .botonera {
+        height: 100%;
+        /* padding-block-start: 5%; */
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        gap: 2vh;
+        border: 2px solid red;
+    }
 }
 
 
 
-@media screen and (min-width: 1024px){
+@media (max-width: 1023px) and (min-width: 768px) {
 
+    .modal-container {
+        width: 30vw;
+        height: 30vh;
+    }
 
+    .container-bandera {
+        height: auto;
+    }
+
+    .carga-preguntas {
+        width: 100%;
+        height: auto;
+        padding: 3%;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .cuestionario {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .botonera {
+        padding-block-start: 5%;
+    }
 }
 
 
-
+@media screen and (min-width: 1024px) {}
