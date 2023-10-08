@@ -341,10 +341,8 @@
 @media (max-width: 767px) {
     .header-index {
         width: 100%;
-        height: 15vh;
+        height: 12vh;
     }
-
-    
 
     .header-index_figure{
         width: 25%;
@@ -355,7 +353,7 @@
     }
 
     .main-index_ul_li{
-        font-size: 1.5vw;
+        font-size: 3vw;
     }
 
     .btn-close {
@@ -387,7 +385,6 @@
 
     .botonera {
         height: 100%;
-        /* padding-block-start: 5%; */
         display: flex;
         flex-flow: column;
         justify-content: space-around;
