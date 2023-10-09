@@ -7,6 +7,7 @@ import banderas from "./banderas.js";
 const cargaBanderas = document.querySelector(".carga-banderas");
 const logo = document.querySelector(".header-index_figure_img");
 const containerIndex = document.querySelector(".container-index");
+const mainIndex = document.querySelector(".main-index");
 const europaBtn = document.querySelector(".europa-btn");
 const africaBtn = document.querySelector(".africa-btn");
 const asiaBtn = document.querySelector(".asia-btn");
@@ -63,7 +64,7 @@ function mostrarNumerosDePagina() {
     // Crea un elemento div para mostrar los números de página.
     const paginacion = document.createElement('div');
     paginacion.className = 'paginacion';
-    cargaBanderas.append(paginacion);
+    mainIndex.append(paginacion);
 
     const lineaSup = document.createElement('hr');
     lineaSup.classList = "lineaSup";
@@ -92,8 +93,6 @@ function mostrarNumerosDePagina() {
     }
     cargaBanderas.appendChild(paginacion);
 }
-
-
 
 
 //Cargar todas las banderas cuando click en la imágen del logo
