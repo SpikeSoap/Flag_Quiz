@@ -370,11 +370,11 @@
 
     .carga-banderas {
         height: 75vh;
+        border: 2px solid red;
     }
 
     .artBandera {
-        height: 10vh;
-       
+        height: 10vh; 
     }
 
     .flag-des {
@@ -383,6 +383,12 @@
 
     .paginacion {
         height: 5vh;
+        border: 2px solid blue;
+        font-size: 4vw;
+    }
+
+    .pagina-actual {
+        font-size: 5vw;
     }
 
     .btn-close {
