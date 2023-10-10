@@ -364,7 +364,7 @@
     }
 
     .artBandera {
-        height: 10vh; 
+        height: 10vh;
     }
 
     .flag-des {
@@ -373,7 +373,6 @@
 
     .paginacion {
         height: 5vh;
-        border: 2px solid blue;
         font-size: 4vw;
     }
 
@@ -385,21 +384,21 @@
         width: 65vw;
         height: 30vh;
     }
-    
+
     .btn-close {
         position: absolute;
         top: 10%;
-        right: 10%;  
+        right: 10%;
         width: 10%;
     }
-    
+
     .modal-title {
         width: 100%;
         text-align: center;
         padding-top: 10%;
         font-size: 6vw;
     }
-    
+
     .btn-empezar {
         position: absolute;
         top: 65%;
@@ -408,8 +407,6 @@
         height: 4vh;
         font-size: 4vw;
     }
-
-    
 
 
     .container-bandera {
@@ -426,13 +423,38 @@
 
     .cuestionario {
         width: 100%;
+        
+    }
+    .formulario {
+        width: 100%;
+    }
+
+    .pregunta {
+        width: 190%;
+        font-size: 5vw;
+    }
+
+    .respuesta-container {
+        width: 100%;
+        height: 5vh;
+        margin-block-start: 15%;
+        border: 2px solid blue;
+    }
+
+    .resp{
+        font-size: 3vh;
+    }
+
+    .bandera-container {
+        width: 50%;
+        padding-block-start: 10%;
     }
 
     .botonera {
         height: 100%;
         display: flex;
-        flex-flow: column;
         justify-content: space-around;
+        margin-block-start: 10%;
         gap: 2vh;
         border: 2px solid red;
     }
