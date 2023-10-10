@@ -419,6 +419,7 @@
         padding: 3%;
         display: flex;
         flex-flow: column;
+        margin-block-start: 5%;
     }
 
     .cuestionario {
@@ -459,7 +460,6 @@
         justify-content: space-around;
         margin-block-start: 10%;
         gap: 2vh;
-        border: 2px solid red;
     }
 
     .btn{
