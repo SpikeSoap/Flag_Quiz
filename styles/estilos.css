@@ -169,7 +169,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
-
 }
 
 .btn-close {
@@ -219,15 +218,6 @@
 
 /* FIN MODAL */
 /**/
-
-
-/*BORRAR*/
-
-
-
-
-/*BORRAR*/
-
 /* FIN index.html*/
 /**/
 /*INICIO banderas.html*/
@@ -398,9 +388,10 @@
     }
 
     .modal-container {
-        width: 30vw;
-        height: 25vh;
+        width: 35vw;
+        height: 15vh;
     }
+
 
     .container-bandera {
         height: auto;
