@@ -360,7 +360,7 @@
 
     .carga-banderas {
         height: 75vh;
-        border: 2px solid red;
+
     }
 
     .artBandera {
@@ -381,16 +381,35 @@
         font-size: 5vw;
     }
 
+    .modal-container {
+        width: 45vw;
+        height: 20vh;
+    }
+    
     .btn-close {
         position: absolute;
-        top: 12%;
-        right: 10%;
+        top: 10%;
+        right: 10%;  
+        width: 13%;
+    }
+    
+    .modal-title {
+        width: 100%;
+        text-align: center;
+        padding-top: 10%;
+        font-size: 4vw;
+    }
+    
+    .btn-empezar {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        width: 40%;
+        height: 3vh;
+        font-size: 3vw;
     }
 
-    .modal-container {
-        width: 35vw;
-        height: 15vh;
-    }
+    
 
 
     .container-bandera {
