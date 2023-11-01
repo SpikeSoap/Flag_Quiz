@@ -31,11 +31,6 @@
     background-color: var(--verde);
 }
 
-.container-index_selec {
-    height: 100vh;
-
-}
-
 .header-index {
     width: 95%;
     height: 30vh;

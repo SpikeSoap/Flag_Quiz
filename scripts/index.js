@@ -102,7 +102,7 @@ logo.addEventListener("click", () => {
     cargarBanderas();
     borrarSelecionado();
 
-    containerIndex.classList.remove('container-index_selec');
+    
 });
 
 //Se cargan solo las banderas que corresponden
@@ -137,10 +137,6 @@ function borrarSelecionado() {
     oceaniaBtn.classList.remove('nav-seleccionado');
 }
 
-function corregirAltura() {
-    containerIndex.classList.remove('container-index_selec');
-    containerIndex.classList.add('container-index_selec');
-}
 
 // Botón Europa del nav
 europaBtn.addEventListener("click", () => {
@@ -151,7 +147,6 @@ europaBtn.addEventListener("click", () => {
     borrarSelecionado();
     europaBtn.classList.add('nav-seleccionado');
 
-    corregirAltura();
 });
 
 // Botón África del nav
@@ -163,7 +158,6 @@ africaBtn.addEventListener("click", () => {
     borrarSelecionado();
     africaBtn.classList.add('nav-seleccionado');
 
-    corregirAltura();
 });
 
 
@@ -175,8 +169,6 @@ asiaBtn.addEventListener("click", () => {
 
     borrarSelecionado();
     asiaBtn.classList.add('nav-seleccionado');
-
-    corregirAltura();
 });
 
 
@@ -188,8 +180,6 @@ americaBtn.addEventListener("click", () => {
 
     borrarSelecionado();
     americaBtn.classList.add('nav-seleccionado');
-
-    corregirAltura();
 });
 
 
@@ -202,7 +192,6 @@ oceaniaBtn.addEventListener("click", () => {
     borrarSelecionado();
     oceaniaBtn.classList.add('nav-seleccionado');
 
-    corregirAltura();
 });
 
 
